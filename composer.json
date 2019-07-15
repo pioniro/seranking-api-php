@@ -1,0 +1,47 @@
+{
+    "name": "pioniro/seranking-api-php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksey Fedorov",
+            "email": "pioniro@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "php-http/httplug": "^2.0",
+        "php-http/discovery": "^1.7",
+        "php-http/message": "^1.7",
+        "php-http/message-factory": "^1.0",
+        "psr/http-message": "^1.0",
+        "php-http/client-common": "^2.0",
+        "psr/http-factory": "^1.0"
+    },
+    "suggest": {
+        "php-http/client-implementation": "^1.0",
+        "php-http/curl-client": "dev-master",
+        "php-http/guzzle6-adapter": "dev-master"
+    },
+    "description": "",
+    "require-dev": {
+        "php-http/curl-client": "^2.0",
+        "guzzlehttp/psr7": "^1.6",
+        "php-http/mock-client": "^1.3",
+        "symfony/var-dumper": "^4.3",
+        "phpunit/phpunit": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pioniro\\Seranking\\": "src/"
+        },
+        "psr-0": {
+            "Pioniro\\Seranking": "src/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    }
+}
