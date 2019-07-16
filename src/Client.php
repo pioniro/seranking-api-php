@@ -54,13 +54,6 @@ class Client
      */
     public function __construct($config = [])
     {
-//        if (isset($config['login'])) {
-//            $this->login = $config['login'];
-//        }
-//
-//        if (isset($config['password'])) {
-//            $this->pass = $config['password'];
-//        }
 
         if (isset($config['token'])) {
             $this->token = $config['token'];
