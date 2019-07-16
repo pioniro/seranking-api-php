@@ -14,24 +14,26 @@
         "ext-mbstring": "*",
         "php-http/httplug": "^2.0",
         "php-http/discovery": "^1.7",
-        "php-http/message": "^1.7",
+      "php-http/client-common": "^2.0",
         "php-http/message-factory": "^1.0",
+      "php-http/client-implementation": "^1.0",
         "psr/http-message": "^1.0",
-        "php-http/client-common": "^2.0",
-        "psr/http-factory": "^1.0"
+      "psr/http-factory": "^1.0",
+      "psr/log": "^1.1"
     },
     "suggest": {
-        "php-http/client-implementation": "^1.0",
         "php-http/curl-client": "dev-master",
         "php-http/guzzle6-adapter": "dev-master"
     },
     "description": "",
     "require-dev": {
+      "phpunit/phpunit": "^7.5",
+      "guzzlehttp/psr7": "^1.6",
+      "php-http/message": "^1.7",
+      "symfony/var-dumper": "^4.3",
         "php-http/curl-client": "^2.0",
-        "guzzlehttp/psr7": "^1.6",
         "php-http/mock-client": "^1.3",
-        "symfony/var-dumper": "^4.3",
-        "phpunit/phpunit": "^7.5"
+      "http-interop/http-factory-diactoros": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -41,7 +43,15 @@
             "Pioniro\\Seranking": "src/"
         }
     },
+  "autoload-dev": {
+    "psr-4": {
+      "Pioniro\\Seranking\\Tests\\": "tests/"
+    },
+    "psr-0": {
+      "Pioniro\\Seranking\\Tests": "tests/"
+    }
+  },
     "scripts": {
-        "test": "./vendor/bin/phpunit"
+      "test": "./vendor/bin/phpunit --color"
     }
 }
