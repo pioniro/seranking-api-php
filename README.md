@@ -1,6 +1,7 @@
 Seranking api client
 ====================
 [![Build Status](https://travis-ci.org/pioniro/seranking-api-php.svg?branch=master)](https://travis-ci.org/pioniro/seranking-api-php)
+[![Coverage Status](https://coveralls.io/repos/github/pioniro/seranking-api-php/badge.svg?branch=master)](https://coveralls.io/github/pioniro/seranking-api-php?branch=master)
 
 
 Library for seranking api v4
